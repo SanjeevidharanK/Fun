@@ -2,6 +2,7 @@ const Choose = document.getElementById('dum');
 const ye = document.getElementById('yes');
 const n = document.getElementById('no');
 const silly = document.getElementById('sill');
+const whol = document.querySelector('body');
 var a = 0;
 
 ye.onclick = function(){
@@ -10,14 +11,11 @@ ye.onclick = function(){
     silly.style.alignItems ="center";
     silly.style.justifyContent ="center";
     silly.style.textAlign="center";
-
+    whol.style.background ="red";
 
 }
 n.onclick = function(){
     a++;
-    // if(a === 3){
-    //     alert('Fuck You');
-    // }
     if(a%2 === 0){
         n.style.position ="absolute";
         n.style.right = "0";
